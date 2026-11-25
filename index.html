@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peihang's Little Universe ✦ 李沛航</title>
+  <meta name="description" content="Peihang Li (李沛航), filmmaker, writer and researcher in Los Angeles. Films, research on directing with AI, and a little life outside the frame." />
+  <meta property="og:title" content="Peihang's Little Universe ✦ 李沛航" />
+  <meta property="og:description" content="A director studying how directors decide. Films, research, and two cats." />
+  <meta name="theme-color" content="#faf4e8" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Noto+Serif+SC:wght@600&family=Silkscreen&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <script src="script.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Peihang Li, back to top">
+      <span class="logo__heart" aria-hidden="true"></span>
+      <span>PEIHANG.LI</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work" data-nav="work"><span data-en="Work" data-zh="作品">Work</span></a>
+      <a href="#research" data-nav="research"><span data-en="Research" data-zh="研究">Research</span></a>
+      <a href="#about" data-nav="about"><span data-en="About" data-zh="关于我">About</span></a>
+      <a href="#after-hours" data-nav="after-hours"><span data-en="After hours" data-zh="下班后">After hours</span></a>
+      <a href="#contact" data-nav="contact"><span data-en="Contact" data-zh="联系我">Contact</span></a>
+    </nav>
+    <button class="lang" type="button" aria-label="切换到中文">中文</button>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav"><span data-en="Menu" data-zh="菜单">Menu</span></button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__copy">
+        <p class="eyebrow"><i class="eyebrow__dot" aria-hidden="true"></i><span data-en="A little universe by" data-zh="欢迎来到我的小宇宙">A little universe by</span></p>
+        <h1 class="hero__name">Peihang <em>Li.</em></h1>
+        <p class="hero__sub"><span class="hero__zh" lang="zh-CN">李沛航</span><span class="pix" data-en="Los Angeles, CA" data-zh="洛杉矶">Los Angeles, CA</span></p>
+        <p class="hero__lede" data-en="I'm a director, and I study how directors decide. Generative AI can give me endless images, but it can't tell me what I want to say with them." data-zh="我是导演，也在研究导演怎么做判断。生成式 AI 能给我很多画面，但它不会告诉我，我想用它表达什么。">I'm a director, and I study how directors decide. Generative AI can give me endless images, but it can't tell me what I want to say with them.</p>
+        <dl class="hero__edu">
+          <div>
+            <dt class="pix" data-en="Now" data-zh="现在">Now</dt>
+            <dd><strong data-en="USC School of Cinematic Arts" data-zh="南加州大学电影艺术学院">USC School of Cinematic Arts</strong><span data-en="MFA · Film &amp; Television Production · since January 2026" data-zh="电影电视制作 MFA · 2026 年 1 月入学">MFA · Film &amp; Television Production · since January 2026</span></dd>
+          </div>
+          <div>
+            <dt class="pix" data-en="Research" data-zh="研究">Research</dt>
+            <dd><strong data-en="Cornell University" data-zh="康奈尔大学">Cornell University</strong><span data-en="Research collaboration on generative AI &amp; filmmaking · since October 2026" data-zh="生成式 AI 与电影创作研究合作 · 2026 年 10 月起">Research collaboration on generative AI &amp; filmmaking · since October 2026</span></dd>
+          </div>
+          <div>
+            <dt class="pix">2025</dt>
+            <dd><strong data-en="School of Visual Arts" data-zh="纽约视觉艺术学院">School of Visual Arts</strong><span data-en="BFA in Film, with Honors · Directing · New York" data-zh="电影 BFA，荣誉毕业 · 导演方向 · 纽约">BFA in Film, with Honors · Directing · New York</span></dd>
+          </div>
+        </dl>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#work"><span data-en="Explore my work" data-zh="看看我的作品">Explore my work</span><b aria-hidden="true">↓</b></a>
+          <button class="btn btn--ghost" type="button" data-cycle-role><span data-en="Me, in another role" data-zh="认识另一个我">Me, in another role</span><b aria-hidden="true">↻</b></button>
+        </div>
+      </div>
+
+      <figure class="stage">
+        <div class="stage__sky">
+          <span class="stage__sun" aria-hidden="true"></span>
+          <span class="cloud cloud--one" aria-hidden="true"></span>
+          <span class="cloud cloud--two" aria-hidden="true"></span>
+          <p class="bubble" id="role-bubble" aria-live="polite">This take is the one. Move on!</p>
+          <button class="avatar" id="avatar" type="button" data-role="director" aria-label="Change Peihang's role">
+            <span class="pixel-person" aria-hidden="true"><i class="hair-back"></i><i class="head"></i><i class="bang"></i><i class="body"></i><i class="arm arm-left"></i><i class="arm arm-right"></i><i class="leg leg-left"></i><i class="leg leg-right"></i><i class="shoe shoe-left"></i><i class="shoe shoe-right"></i><i class="role-prop"></i></span>
+          </button>
+          <div class="stage__ground" aria-hidden="true"></div>
+        </div>
+        <figcaption class="stage__bar">
+          <span class="pix"><span data-en="Role" data-zh="身份">Role</span> · <strong id="role-name">Director</strong></span>
+          <span class="stage__hint" data-en="Tap the character" data-zh="点一下小人">Tap the character</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 01 WORK -->
+    <section class="section" id="work" data-section>
+      <header class="sec-head">
+        <p class="eyebrow"><b>01</b><span data-en="Work" data-zh="作品">Work</span></p>
+        <h2 class="sec-title" data-en="Films I've made" data-zh="我拍过的片子">Films I've made</h2>
+        <p class="sec-lede" data-en="Four selected films. Each one opens on my film portfolio, where you can watch it in full." data-zh="四部精选影片，点开就到我的作品集，可以看完整片。">Four selected films. Each one opens on my film portfolio, where you can watch it in full.</p>
+      </header>
+
+      <div class="films">
+        <a class="film" href="https://lipeihang952-wq.github.io/portfolio/#red-whistle" target="_blank" rel="noopener">
+          <span class="film__frame"><img src="assets/films/red-whistle.jpg" width="1400" height="586" loading="lazy" alt="Two boys walking through a sunlit forest, from The Red Whistle" /></span>
+          <span class="film__info">
+            <span class="film__title">The Red Whistle <span lang="zh-CN">红哨子</span></span>
+            <span class="film__logline" data-en="Two boys on a forest adventure." data-zh="两个男孩在森林里的一场冒险。">Two boys on a forest adventure.</span>
+            <span class="film__meta" data-en="Narrative short · 2024 · Writer &amp; Director" data-zh="剧情短片 · 2024 · 编剧、导演">Narrative short · 2024 · Writer &amp; Director</span>
+          </span>
+          <span class="film__watch" data-en="Watch ↗" data-zh="观看 ↗">Watch ↗</span>
+        </a>
+        <a class="film" href="https://lipeihang952-wq.github.io/portfolio/#breeze" target="_blank" rel="noopener">
+          <span class="film__frame"><img src="assets/films/breeze.jpg" width="1400" height="586" loading="lazy" alt="A small house strung with lights at dusk, from The Breeze Blows Through Sahuan Valley" /></span>
+          <span class="film__info">
+            <span class="film__title">The Breeze Blows Through Sahuan Valley <span lang="zh-CN">微风吹过撒欢谷</span></span>
+            <span class="film__logline" data-en="A child living with depression, slowly getting better." data-zh="讲一个患抑郁症的孩子慢慢好起来。">A child living with depression, slowly getting better.</span>
+            <span class="film__meta" data-en="Narrative short · 2023 · Co-writer &amp; Co-director" data-zh="剧情短片 · 2023 · 联合编剧、联合导演">Narrative short · 2023 · Co-writer &amp; Co-director</span>
+          </span>
+          <span class="film__watch" data-en="Watch ↗" data-zh="观看 ↗">Watch ↗</span>
+        </a>
+        <a class="film" href="https://lipeihang952-wq.github.io/portfolio/#little-journeys" target="_blank" rel="noopener">
+          <span class="film__frame"><img src="assets/films/little-journeys.jpg" width="1400" height="586" loading="lazy" alt="Horses running across open grassland, from Little Journeys" /></span>
+          <span class="film__info">
+            <span class="film__title">Little Journeys <span lang="zh-CN">小远方</span></span>
+            <span class="film__logline" data-en="A youth documentary series filmed in Inner Mongolia." data-zh="在内蒙古拍摄的青少年纪录片系列。">A youth documentary series filmed in Inner Mongolia.</span>
+            <span class="film__meta" data-en="Documentary series · 2021 · Co-director &amp; Organizer" data-zh="纪录片系列 · 2021 · 联合导演、组织者">Documentary series · 2021 · Co-director &amp; Organizer</span>
+          </span>
+          <span class="film__watch" data-en="Watch ↗" data-zh="观看 ↗">Watch ↗</span>
+        </a>
+        <a class="film" href="https://lipeihang952-wq.github.io/portfolio/#because-of-you" target="_blank" rel="noopener">
+          <span class="film__frame"><img src="assets/films/because-of-you.jpg" width="1400" height="586" loading="lazy" alt="An old building seen from above, from Because of You" /></span>
+          <span class="film__info">
+            <span class="film__title">Because of You <span lang="zh-CN">因为遇见你</span></span>
+            <span class="film__logline" data-en="Household registration and access to schooling in Beijing." data-zh="关于北京的户籍，和孩子能不能上学。">Household registration and access to schooling in Beijing.</span>
+            <span class="film__meta" data-en="Short film · 2020 · Director" data-zh="短片 · 2020 · 导演">Short film · 2020 · Director</span>
+          </span>
+          <span class="film__watch" data-en="Watch ↗" data-zh="观看 ↗">Watch ↗</span>
+        </a>
+      </div>
+      <p class="more-link"><a href="https://lipeihang952-wq.github.io/portfolio/" target="_blank" rel="noopener" data-en="See the full film portfolio ↗" data-zh="去作品集看全部影片 ↗">See the full film portfolio ↗</a></p>
+
+      <div class="dev">
+        <h3 class="dev__head" data-en="In progress" data-zh="正在做的">In progress</h3>
+        <ul class="dev__list">
+          <li>
+            <p class="dev__type pix" data-en="Short film · Writer &amp; Director · in post-production at USC" data-zh="短片 · 编剧、导演 · USC 后期制作中">Short film · Writer &amp; Director · in post-production at USC</p>
+            <h4 class="dev__title">The Call</h4>
+            <p data-en="From the hospital, she calls her husband and tells him he doesn't need to come. He doesn't. By the time he asks to try again, the divorce papers are on the table, and she has stopped waiting." data-zh="她在医院给丈夫打电话，说你不用来了。他真的没来。等他想挽回的时候，离婚协议已经摆在桌上，而她早就不再等了。">From the hospital, she calls her husband and tells him he doesn't need to come. He doesn't. By the time he asks to try again, the divorce papers are on the table, and she has stopped waiting.</p>
+          </li>
+          <li>
+            <p class="dev__type pix" data-en="Original series · in development" data-zh="原创剧集 · 开发中">Original series · in development</p>
+            <h4 class="dev__title">The Kiss of Time <span lang="zh-CN">时间之吻</span></h4>
+            <p data-en="An eight-episode psychological suspense series developed with generative AI, about memory, power, identity, and who gets to define another person's time." data-zh="八集心理悬疑剧，和生成式 AI 一起开发，讲记忆、权力、身份，以及谁有资格定义另一个人的时间。">An eight-episode psychological suspense series developed with generative AI, about memory, power, identity, and who gets to define another person's time.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 02 RESEARCH -->
+    <section class="section section--tint" id="research" data-section>
+      <div class="research">
+        <div class="research__copy">
+          <p class="eyebrow"><b>02</b><span data-en="Research" data-zh="研究">Research</span></p>
+          <h2 class="sec-title" data-en="Whose suggestion would you take?" data-zh="你会听谁的？">Whose suggestion would you take?</h2>
+          <p class="research__q" data-en="My editing teacher once asked me: “If AI gives you a suggestion and I give you one, whose would you take?” I said, “The one I like.”" data-zh="我的剪辑老师有一次问我：“如果 AI 给你一个建议，我也给你一个建议，你会听谁的？”我说：“我会选我喜欢的。”">My editing teacher once asked me: “If AI gives you a suggestion and I give you one, whose would you take?” I said, “The one I like.”</p>
+          <p data-en="It was an honest answer, but not yet an explanation. “Liking” turns out to be my understanding of a character: an expression or a gesture either belongs to the person I have in mind, or it is out of character. That is the judgment I study. When we make films with generative AI, how does a director decide what to keep, what to change, and what to let go?" data-zh="这是一个诚实的回答，却还算不上解释。“喜欢”其实是我对人物的理解：一个表情、一个动作，要么属于我心里的那个人，要么就是 OOC。我研究的就是这种判断：用生成式 AI 创作时，导演怎样决定留下什么、改掉什么、放弃什么。">It was an honest answer, but not yet an explanation. “Liking” turns out to be my understanding of a character: an expression or a gesture either belongs to the person I have in mind, or it is out of character. That is the judgment I study. When we make films with generative AI, how does a director decide what to keep, what to change, and what to let go?</p>
+          <h4 class="mini-head pix" data-en="Research interests" data-zh="研究兴趣">Research interests</h4>
+          <ul class="interests">
+            <li data-en="Directorial judgment and authorship in filmmaking with generative AI" data-zh="生成式 AI 参与电影创作时，导演的判断和作者身份">Directorial judgment and authorship in filmmaking with generative AI</li>
+            <li data-en="Human–AI collaboration in screenwriting and film production" data-zh="编剧和电影制作里的人机协作">Human–AI collaboration in screenwriting and film production</li>
+            <li data-en="Documentary sound and women's voices" data-zh="纪录片里的声音，和女性的声音">Documentary sound and women's voices</li>
+          </ul>
+          <a class="text-link" href="mailto:peihangl@usc.edu?subject=Research%20conversation" data-en="Write to me about it ↗" data-zh="写信跟我聊聊 ↗">Write to me about it ↗</a>
+        </div>
+        <div class="research__side">
+          <article class="collab">
+            <p class="pix collab__label" data-en="Research collaboration · since October 2026" data-zh="研究合作 · 2026 年 10 月起">Research collaboration · since October 2026</p>
+            <h3 class="collab__title" data-en="Generative AI and Filmmaking" data-zh="生成式 AI 与电影创作">Generative AI and Filmmaking</h3>
+            <p class="collab__with" data-en="With Professor Qian Yang, Cornell University" data-zh="与康奈尔大学 Qian Yang 教授合作">With Professor Qian Yang, Cornell University</p>
+            <p data-en="I am developing a short fiction film with generative AI, drawing on family stories. Along the way I record prompts, script revisions, and each decision to keep, change, or reject generated material, for discussion with the research team." data-zh="我在用生成式 AI 开发一部取材于家族故事的短片。过程中记录提示词、剧本修改，以及保留、修改或放弃生成内容的每一个决定，拿来和研究团队一起讨论。">I am developing a short fiction film with generative AI, drawing on family stories. Along the way I record prompts, script revisions, and each decision to keep, change, or reject generated material, for discussion with the research team.</p>
+          </article>
+          <div class="writing">
+            <h4 class="mini-head pix" data-en="Selected writing" data-zh="学术写作">Selected writing</h4>
+            <article>
+              <p class="writing__date pix" data-en="November 2026" data-zh="2026 年 11 月">November 2026</p>
+              <h3 class="writing__title">Authorial Presence</h3>
+              <p class="writing__sub">Long-Form Narrative and the Reworking of Authorship in Collaboration with Generative AI</p>
+              <p data-en="Traces how characters and plot changed across saved AI conversations and successive script drafts of The Kiss of Time." data-zh="通过保存下来的 AI 对话和一稿稿剧本，追踪《时间之吻》里人物和情节的变化。">Traces how characters and plot changed across saved AI conversations and successive script drafts of The Kiss of Time.</p>
+            </article>
+            <article>
+              <p class="writing__date pix" data-en="October 2024" data-zh="2024 年 10 月">October 2024</p>
+              <h3 class="writing__title">Women's Voices and the Limits of Compassion in <i>This Is Life</i></h3>
+              <p data-en="A close reading of women's speech and silence in Chen Weijun's documentary series, and of how relatives, medical staff, and the editing frame their accounts." data-zh="细读陈为军纪录片《生门》里女性的说话和沉默，看她们的讲述怎样被家属、医护人员和剪辑框定。">A close reading of women's speech and silence in Chen Weijun's documentary series, and of how relatives, medical staff, and the editing frame their accounts.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 ABOUT -->
+    <section class="section" id="about" data-section>
+      <div class="about">
+        <figure class="about__photo">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="assets/photos/forest-portrait.jpg" width="788" height="1400" loading="lazy" alt="Peihang sitting on a wooden railing in a sunlit forest" />
+        </figure>
+        <div class="about__copy">
+          <p class="eyebrow"><b>03</b><span data-en="About" data-zh="关于我">About</span></p>
+          <h2 class="sec-title" data-en="Who is Peihang?" data-zh="李沛航是谁？">Who is Peihang?</h2>
+          <p class="about__big" data-en="A story in five scenes." data-zh="分五场戏讲。">A story in five scenes.</p>
+          <ol class="scenes">
+            <li class="scene scene--photo">
+              <img src="assets/photos/childhood-camera.jpg" width="1400" height="1050" loading="lazy" alt="Little Peihang wearing a camera" />
+              <div>
+                <p class="scene__slug pix" data-en="Ext. A small city in Northeast China — childhood" data-zh="外景 · 东北小城 · 小时候">Ext. A small city in Northeast China — childhood</p>
+                <p data-en="A little girl hangs upside down from the parallel bars. Trees, sky, people: everything looks unfamiliar the other way round, and she can't stop looking." data-zh="一个小女孩倒挂在双杠上。倒过来的树、天空和人，一切都显得陌生，她看得着迷。">A little girl hangs upside down from the parallel bars. Trees, sky, people: everything looks unfamiliar the other way round, and she can't stop looking.</p>
+              </div>
+            </li>
+            <li class="scene">
+              <p class="scene__slug pix" data-en="Int. Home — whenever Mom comes back from a shoot" data-zh="内景 · 家里 · 妈妈拍片回来">Int. Home — whenever Mom comes back from a shoot</p>
+              <p data-en="Her mom is a documentary filmmaker, and the girl can hardly wait for the stories she brings home. Filming in a drought-stricken region, her mom noticed how long a little girl had gone without washing her hair. The girl remembers: stories hide in the details other people miss." data-zh="妈妈是纪录片导演。她每次拍片回来，女孩都迫不及待地等她讲故事。拍旱灾地区时，妈妈注意到的是一个小女孩已经多久没有洗头了。女孩记住了：故事常常藏在别人忽略的细节里。">Her mom is a documentary filmmaker, and the girl can hardly wait for the stories she brings home. Filming in a drought-stricken region, her mom noticed how long a little girl had gone without washing her hair. The girl remembers: stories hide in the details other people miss.</p>
+            </li>
+            <li class="scene">
+              <p class="scene__slug pix" data-en="Ext. Beijing — eighteen" data-zh="外景 · 北京 · 十八岁">Ext. Beijing — eighteen</p>
+              <p data-en="She has moved from her small northeastern city to Beijing for school. At eighteen she writes, directs, and acts in her first short, Hello, Decade, about a girl who makes the same move. The first cut is almost all voiceover. Her mom says: tell it with images and sound. So a paper airplane flies out of a window." data-zh="她从东北小城来到北京上学。十八岁那年，她自编自导自演了第一部短片《十年，你好》，讲的就是一个这样来到北京的东北女孩。第一版几乎全靠旁白。妈妈说，用画面和声音讲。于是，一架纸飞机从窗口飞了出去。">She has moved from her small northeastern city to Beijing for school. At eighteen she writes, directs, and acts in her first short, Hello, Decade, about a girl who makes the same move. The first cut is almost all voiceover. Her mom says: tell it with images and sound. So a paper airplane flies out of a window.</p>
+            </li>
+            <li class="scene">
+              <p class="scene__slug pix" data-en="Ext. New York — 2021 to 2025" data-zh="外景 · 纽约 · 2021–2025">Ext. New York — 2021 to 2025</p>
+              <p data-en="Film school in New York. With her mom, she writes The Breeze Blows Through Sahuan Valley: twenty-nine drafts, plus songs she writes for it. She notices she rarely knows what she wants at the start. She finds out while revising." data-zh="在纽约读电影。她和妈妈一起写《微风吹过撒欢谷》，剧本改了二十九稿，她还给片子写了歌。她发现自己很少一开始就知道要什么，常常是改着改着，才知道。">Film school in New York. With her mom, she writes The Breeze Blows Through Sahuan Valley: twenty-nine drafts, plus songs she writes for it. She notices she rarely knows what she wants at the start. She finds out while revising.</p>
+            </li>
+            <li class="scene">
+              <p class="scene__slug pix" data-en="Int. Los Angeles — now" data-zh="内景 · 洛杉矶 · 现在">Int. Los Angeles — now</p>
+              <p data-en="An MFA at USC, a new short in post. And a new question: when you make a film with AI, how does a director know when to say “move on”? When things get tense on set, she's still the first to crack a joke. At home, two cats: Li Guagua and Li Biga." data-zh="在 USC 读 MFA，新的短片在做后期。还多了一个新问题：用 AI 拍电影的时候，导演凭什么知道可以喊 move on 了？片场气氛紧张时，她还是那个先开玩笑的人。家里有两只猫，李瓜瓜和李鼻嘎。">An MFA at USC, a new short in post. And a new question: when you make a film with AI, how does a director know when to say “move on”? When things get tense on set, she's still the first to crack a joke. At home, two cats: Li Guagua and Li Biga.</p>
+            </li>
+          </ol>
+          <p class="scenes__end" data-en="(The girl on the parallel bars? That's me.)" data-zh="（那个倒挂在双杠上的女孩，就是我。）">(The girl on the parallel bars? That's me.)</p>
+          <ul class="sides" aria-label="Many sides">
+            <li data-en="Director" data-zh="导演">Director</li>
+            <li data-en="Writer" data-zh="编剧">Writer</li>
+            <li data-en="Researcher" data-zh="研究者">Researcher</li>
+            <li data-en="Songwriting &amp; guitar" data-zh="写歌、弹吉他">Songwriting &amp; guitar</li>
+            <li data-en="Piano" data-zh="钢琴">Piano</li>
+            <li data-en="Little poems" data-zh="小诗">Little poems</li>
+            <li data-en="Surprise planner" data-zh="惊喜策划">Surprise planner</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="glance">
+        <div>
+          <h3 class="mini-head pix" data-en="Education" data-zh="教育">Education</h3>
+          <dl class="cv">
+            <div>
+              <dt class="pix" data-en="Since Jan 2026" data-zh="2026.1 入学">Since Jan 2026</dt>
+              <dd><strong data-en="University of Southern California, School of Cinematic Arts" data-zh="南加州大学电影艺术学院">University of Southern California, School of Cinematic Arts</strong><span data-en="MFA, Film and Television Production" data-zh="电影电视制作 MFA">MFA, Film and Television Production</span></dd>
+            </div>
+            <div>
+              <dt class="pix">2021–2025</dt>
+              <dd><strong data-en="School of Visual Arts, New York" data-zh="纽约视觉艺术学院">School of Visual Arts, New York</strong><span data-en="BFA in Film, with Honors · Concentration in Directing · SHR Merit Scholarship" data-zh="电影 BFA，荣誉毕业 · 导演方向 · SHR Merit Scholarship">BFA in Film, with Honors · Concentration in Directing · SHR Merit Scholarship</span></dd>
+            </div>
+          </dl>
+        </div>
+        <div>
+          <h3 class="mini-head pix" data-en="Experience" data-zh="经历">Experience</h3>
+          <dl class="cv">
+            <div>
+              <dt class="pix">2025</dt>
+              <dd><strong data-en="Creative Director, YAH True Health and Wellness" data-zh="创意总监 · YAH True Health and Wellness">Creative Director, YAH True Health and Wellness</strong><span data-en="Wrote and directed short videos for a health and wellness clinic in Manhattan." data-zh="为曼哈顿一家健康诊所编剧、导演短视频。">Wrote and directed short videos for a health and wellness clinic in Manhattan.</span></dd>
+            </div>
+            <div>
+              <dt class="pix">2024–2025</dt>
+              <dd><strong data-en="Teaching Assistant &amp; Editing Assistant, School of Visual Arts" data-zh="助教、剪辑助理 · 纽约视觉艺术学院">Teaching Assistant &amp; Editing Assistant, School of Visual Arts</strong><span data-en="Assisted Charles Kipps (Adaptation; Television) and Gina Abatemarco (Screenwriting; Advanced Screenwriting): feedback on student treatments and scripts, and help with editing." data-zh="协助 Charles Kipps（改编、电视）和 Gina Abatemarco（编剧、高级编剧）的课：给学生的故事大纲和剧本提意见，也帮他们剪片。">Assisted Charles Kipps (Adaptation; Television) and Gina Abatemarco (Screenwriting; Advanced Screenwriting): feedback on student treatments and scripts, and help with editing.</span></dd>
+            </div>
+            <div>
+              <dt class="pix">2024</dt>
+              <dd><strong data-en="Editorial Intern, AT HOME &amp; OVERSEAS Magazine" data-zh="编辑实习生 · AT HOME &amp; OVERSEAS 杂志">Editorial Intern, AT HOME &amp; OVERSEAS Magazine</strong><span data-en="On-site interviews at the Forbidden City and a cultural feature." data-zh="在故宫做现场采访，写了一篇文化报道。">On-site interviews at the Forbidden City and a cultural feature.</span></dd>
+            </div>
+            <div>
+              <dt class="pix">2023–2024</dt>
+              <dd><strong data-en="Creative Director, Nashi (Beijing) Cultural Communication" data-zh="创意总监 · Nashi（北京）文化传播有限公司">Creative Director, Nashi (Beijing) Cultural Communication</strong><span data-en="Directed short-form narrative videos." data-zh="导演叙事类短视频。">Directed short-form narrative videos.</span></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 AFTER HOURS -->
+    <section class="section section--tint" id="after-hours" data-section>
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow"><b>04</b><span data-en="After hours" data-zh="下班后">After hours</span></p>
+          <h2 class="sec-title" data-en="Life outside the frame" data-zh="画框外的生活">Life outside the frame</h2>
+          <p class="sec-lede" data-en="I like planning surprises for my friends and my mother. Even ordinary days deserve a little celebration." data-zh="我喜欢给朋友和妈妈制造惊喜，觉得平常的日子也值得有一点仪式感。">I like planning surprises for my friends and my mother. Even ordinary days deserve a little celebration.</p>
+        </div>
+        <div class="strip-nav">
+          <button type="button" data-strip="-1" aria-label="Previous photos">←</button>
+          <button type="button" data-strip="1" aria-label="Next photos">→</button>
+        </div>
+      </header>
+
+      <div class="strip" tabindex="0" aria-label="Memories">
+        <figure class="snap">
+          <img src="assets/photos/hollywood-adventure.jpg" width="933" height="1400" loading="lazy" alt="Peihang walking toward the Hollywood Tower" />
+          <figcaption><strong data-en="A day at the park" data-zh="游乐园的一天">A day at the park</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/sva-graduation.jpg" width="1400" height="933" loading="lazy" alt="Peihang smiling in a graduation cap, holding flowers" />
+          <figcaption><strong data-en="SVA graduation, 2025" data-zh="SVA 毕业，2025">SVA graduation, 2025</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/niagara-memory.jpg" width="1050" height="1400" loading="lazy" alt="Peihang looking toward Niagara Falls" />
+          <figcaption><strong data-en="Niagara Falls" data-zh="尼亚加拉瀑布">Niagara Falls</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/golden-hour-portrait.jpg" width="933" height="1400" loading="lazy" alt="Peihang in warm golden light" />
+          <figcaption><strong data-en="Golden hour" data-zh="傍晚的光">Golden hour</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/childhood-icecream.jpg" width="1050" height="1400" loading="lazy" alt="Peihang as a child eating a pink ice cream" />
+          <figcaption><strong data-en="Little me, ice cream" data-zh="小时候，吃冰淇淋">Little me, ice cream</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/city-profile.jpg" width="933" height="1400" loading="lazy" alt="Peihang in profile with a city skyline behind" />
+          <figcaption><strong data-en="Looking at the city" data-zh="看城市">Looking at the city</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/childhood-smile.jpg" width="1050" height="1400" loading="lazy" alt="Peihang as a child smiling in a white dress and straw hat" />
+          <figcaption><strong data-en="Little me, straw hat" data-zh="小时候，戴着草帽">Little me, straw hat</strong></figcaption>
+        </figure>
+        <figure class="snap">
+          <img src="assets/photos/evening-portrait.jpg" width="1400" height="933" loading="lazy" alt="Peihang at an evening event, city lights behind" />
+          <figcaption><strong data-en="A night out" data-zh="晚上出门">A night out</strong></figcaption>
+        </figure>
+      </div>
+
+      <div class="bento">
+        <article class="tile tile--gifts">
+          <p class="pix tile__label" data-en="Songs, poems, gifts" data-zh="写歌、写诗、做礼物">Songs, poems, gifts</p>
+          <h3 class="tile__title" data-en="Turning a feeling into something people can keep." data-zh="把心意，变成别人可以留下来的东西。">Turning a feeling into something people can keep.</h3>
+          <p data-en="Writing songs and little poems is how I turn what I feel into something someone can keep. I wrote songs for The Breeze Blows Through Sahuan Valley." data-zh="写歌、写小诗，是我把心意变成别人可以留下来的东西的方式。我给《微风吹过撒欢谷》写过歌。">Writing songs and little poems is how I turn what I feel into something someone can keep. I wrote songs for The Breeze Blows Through Sahuan Valley.</p>
+          <p data-en="The first website I ever made was a birthday present. I had never written code, so I taught myself and typed it line by line in VS Code, without AI. For my mom's fiftieth birthday, I made her an interactive gift with AI's help, and AI did most of the building. What I still had to decide was what she would find at each layer. That part is what made it hers." data-zh="我做的第一个网站，是一份生日礼物。那时我从没写过代码，就从头自学，在 VS Code 里一行一行自己敲，没有用 AI。妈妈五十岁生日，我借助 AI 给她做了一份互动礼物，大部分搭建交给了 AI。我仍然要决定的，是她在每一层里会看到什么。正是这一部分，让这份礼物真正属于她。">The first website I ever made was a birthday present. I had never written code, so I taught myself and typed it line by line in VS Code, without AI. For my mom's fiftieth birthday, I made her an interactive gift with AI's help, and AI did most of the building. What I still had to decide was what she would find at each layer. That part is what made it hers.</p>
+        </article>
+
+        <article class="tile tile--cats">
+          <p class="pix tile__label" data-en="The two-cat department" data-zh="两只猫猫部门">The two-cat department</p>
+          <h3 class="tile__title" data-en="My supervisors have paws." data-zh="我的两位上司，都有爪子。">My supervisors have paws.</h3>
+          <div class="cats">
+            <figure class="cat">
+              <button class="cat__photo" type="button" data-pet="guagua" aria-label="Pet Li Guagua"><img src="assets/cat/guagua.jpg" width="709" height="736" loading="lazy" alt="Li Guagua, a calico tabby, lying on a pink fluffy blanket" /></button>
+              <figcaption>
+                <strong><span lang="zh-CN">李瓜瓜</span> <span class="cat__en">Guagua</span></strong>
+                <span data-en="Gentle and clingy. Loves naps, keeping me company, and anything fluffy." data-zh="温柔粘人，爱睡觉、爱陪主人，最爱毛茸茸的毯子。">Gentle and clingy. Loves naps, keeping me company, and anything fluffy.</span>
+                <span class="cat__pets">♡ <b data-count="guagua">0</b></span>
+              </figcaption>
+            </figure>
+            <figure class="cat">
+              <button class="cat__photo" type="button" data-pet="biga" aria-label="Pet Biga"><img src="assets/cat/biga.jpg?v=5" width="470" height="470" loading="lazy" alt="Li Biga, a tuxedo cat with amber eyes, against a soft pink blanket" /></button>
+              <figcaption>
+                <strong><span lang="zh-CN">李鼻嘎</span> <span class="cat__en">Biga</span></strong>
+                <span data-en="A tuxedo cat with real camera presence." data-zh="一只很有镜头感的奶牛猫。">A tuxedo cat with real camera presence.</span>
+                <span class="cat__pets">♡ <b data-count="biga">0</b></span>
+              </figcaption>
+            </figure>
+          </div>
+          <p class="hint" data-en="Tap a cat to pet." data-zh="点一下猫就能摸。">Tap a cat to pet.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 CONTACT -->
+    <section class="section contact" id="contact" data-section>
+      <p class="eyebrow"><b>05</b><span data-en="Say hello" data-zh="打个招呼">Say hello</span></p>
+      <h2 class="contact__title" data-en="Let's talk." data-zh="来聊聊吧。">Let's talk.</h2>
+      <p class="contact__lede" data-en="About films, about AI and authorship, or about making something together." data-zh="聊电影，聊 AI 和作者身份，或者一起拍点什么。">About films, about AI and authorship, or about making something together.</p>
+      <ul class="contact__list">
+        <li><span class="pix" data-en="Email" data-zh="邮箱">Email</span><a href="mailto:peihangl@usc.edu">peihangl@usc.edu</a><button class="chip chip--small" type="button" data-copy="peihangl@usc.edu"><span data-en="Copy" data-zh="复制">Copy</span></button></li>
+        <li><span class="pix" data-en="Films" data-zh="作品集">Films</span><a href="https://lipeihang952-wq.github.io/portfolio/" target="_blank" rel="noopener">lipeihang952-wq.github.io/portfolio ↗</a></li>
+        <li><span class="pix">Vimeo</span><a href="https://vimeo.com/peihangli" target="_blank" rel="noopener">vimeo.com/peihangli ↗</a></li>
+        <li><span class="pix" data-en="Based in" data-zh="现居">Based in</span><span data-en="Los Angeles, CA" data-zh="洛杉矶">Los Angeles, CA</span></li>
+      </ul>
+      <p class="copy-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span data-this-year>2026</span> Peihang Li · <span lang="zh-CN">李沛航</span></span>
+    <a href="#top" data-en="Back to top ↑" data-zh="回到顶部 ↑">Back to top ↑</a>
+  </footer>
+</body>
+</html>
